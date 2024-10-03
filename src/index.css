@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-1{
+  color: #13072e;
+}
+
+.bg-primary-1{
+  background: #13072e;
+}
+
+.bg-secondary-1{
+  background: #3f2182;
+}
+
+#map { height: 70%; }
