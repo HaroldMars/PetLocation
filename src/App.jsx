@@ -21,6 +21,7 @@ function App() {
   }, []);
   return (
     <>
+    
       <div className="bg-primary-1 w-screen h-screen text-white">
         <Header />
         <div className="relative grid grid-cols-6 w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
@@ -47,12 +48,13 @@ function App() {
             <br />
             <br />
             <button className="bg-white primary-1 px-4 py-1 rounded-full text-[20px]">
-              Locate <i className="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full"></i>
+              Locate{" "}
+              <i className="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full"></i>
             </button>
           </div>
           <div className="col-span-4 p-8">
             <div
-              className="relative top-[50%] translate-y-[-50%]"
+              className="relative top-[50%] translate-y-[-50%] rounded-xl"
               id="map"
             ></div>
           </div>
