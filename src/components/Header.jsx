@@ -11,7 +11,7 @@ function Header() {
     </div>
     <div className="flex items-center col-span-3">
       <NavLink to="/login" className={({isActive}) => {
-        if(isActive) return "px-4 cursor-pointer truncate text-green-300";
+        if(isActive) return "px-4 cursor-pointer truncate text-purple-300";
         else "px-4 cursor-pointer truncate";
       }}><div className="md:hidden"><i className="fa-solid fa-right-to-bracket"></i></div> <span className="hidden md:block">Login</span></NavLink>
 
