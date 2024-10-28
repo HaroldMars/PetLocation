@@ -3,10 +3,15 @@ import Header from "../components/Header";
 
 function LoginPage() {
   const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("")
   
 
   const handleEnterUsername = (value) => {
     setUsername(value)
+  }
+
+  const handleEnterPassword = (value) => {
+    setPassword(value)
   }
 
   const handleSubmit = () => {
@@ -28,6 +33,9 @@ function LoginPage() {
               <p className="mt-10 text-center font-serif font-bold text-3xl"> Log In </p>
               <div className="flex justify-center m-10">
               <input className=" text-black rounded-xl text-xl p-4" onChange={(e) => handleEnterUsername(e.target.value)} value={username} />
+              </div>
+              <div className="flex justify-center m-10">
+              <input type="password" className=" text-black rounded-xl text-xl p-4" onChange={(e) => handleEnterPassword(e.target.value)} value={password} />
               </div>
               <div className=" absolute w-full bottom-10 text-center"> 
               <button className="border-2 p-2 rounded-xl" onClick={handleSubmit}>Login</button>
