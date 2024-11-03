@@ -23,7 +23,7 @@ function SignupPage() {
             <input type="password" className=" text-black rounded-xl text-xl p-4" />
             </div>
             <div className=" absolute w-full bottom-10 text-center">
-              <button className="border-2 p-2 translate-x-[10%] translate-y-[-100%] rounded-xl"> Sign Up </button>
+              <button className="bg-purple-950 grid-cols-1 p-2 translate-x-[10%] translate-y-[-100%] rounded-xl"> Sign Up </button>
             </div>
             </div>
         </div>

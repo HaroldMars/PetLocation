@@ -39,7 +39,7 @@ function LoginPage() {
               <input type="password" className=" text-black rounded-xl text-xl p-4" onChange={(e) => handleEnterPassword(e.target.value)} value={password} />
               </div>
               <div className=" absolute w-full bottom-10 text-center"> 
-              <button className="border-2 p-2 rounded-xl" onClick={handleSubmit}>Login</button>
+              <button className="bg-purple-950 grid-cols-1 p-2 rounded-xl" onClick={handleSubmit}>Login</button>
               </div>
             </div>
           </div>
