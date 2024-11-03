@@ -31,6 +31,7 @@ function LoginPage() {
           <div className="bg-purple-400 grid-cols-6 w-[350px] h-[500px] absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] rounded-xl">
             <div className="w-[350px] h-[50px]">
               <p className="mt-10 text-center font-serif font-bold text-3xl"> Log In </p>
+              
               <div className="flex justify-center m-10">
               <input className=" text-black rounded-xl text-xl p-4" onChange={(e) => handleEnterUsername(e.target.value)} value={username} />
               </div>
