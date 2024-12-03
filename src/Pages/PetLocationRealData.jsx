@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
+import PetImageIcon from "../assets/dog_icon_marker.png";
 
 function PetLocationRealData() {
   const [locations, setLocations] = useState([]);
@@ -26,7 +27,17 @@ function PetLocationRealData() {
         loadedMap.removeLayer(m);
       }
       for (let location of locations) {
-        var marker = L.marker([location.lat, location.long]).addTo(loadedMap);
+        // change the icon
+        var icon = L.icon({
+          iconUrl: PetImageIcon,
+          iconSize: [32, 32], // size of the icon
+          iconAnchor: [16, 16], // point of the icon which will correspond to marker's location
+          shadowAnchor: [0, 0], // the same for the shadow
+          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+        });
+        var marker = L.marker([location.lat, location.long], {
+          icon: icon,
+        }).addTo(loadedMap);
       }
     }
   }, [loadedMap, locations]);
@@ -72,37 +83,9 @@ function PetLocationRealData() {
     <>
       <div className="bg-primary-1 w-screen h-screen text-white">
         <Header />
-        <div className="relative md:grid md:grid-cols-6 w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
-          <div className="p-8 md:col-span-2">
-            <h1 className="font-bold text-2xl">Locate your Canis</h1>
-
-            <br />
-            <br />
-            <p>
-              Locate your companion, safety-first! Find out what your
-              companion’s doin. Watch the pup’s social activities.
-            </p>
-            <div className="hidden md:block">
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
-            <button className="bg-white primary-1 px-4 py-1 rounded-full text-[20px]">
-              Locate{" "}
-              <i className="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full"></i>
-            </button>
-          </div>
-          <div className="md:col-span-4 p-8 h-[300px] md:h-[70%]">
+        <div className="relative w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
+          <div className="p-8 h-[300px] md:h-[90%]">
+            <h1 className="text-center font-bold text-xl">Pet Tracker</h1>
             <div
               className="border-2 relative top-[50%] translate-y-[-50%] rounded-xl"
               id="map"
