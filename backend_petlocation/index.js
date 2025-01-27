@@ -52,11 +52,17 @@ app.get("/deleteAll", async (req, res) => {
 
 app.get("/getlocations", async (req, res) => {
 
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader('Access-Control-Allow-Methods', '*');
-    res.setHeader("Access-Control-Allow-Headers", "*");
-    const locations = await LocationModel.find({}).exec()
-    res.status(200).send({data: locations})
+    try{
+        console.log("Trying to get the location")
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader('Access-Control-Allow-Methods', '*');
+        res.setHeader("Access-Control-Allow-Headers", "*");
+        const locations = await LocationModel.find({}).exec()
+        res.status(200).send({data: locations})
+    }catch(error){
+        console.error(error);
+        console.log("There was an error getting the locations")
+    }
 })
 
 app.use(
