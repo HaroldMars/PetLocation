@@ -5,6 +5,8 @@ import cors from "cors";
 
 const app = express();
 
+let errorOnOtherSide = "";
+
 
 app.get("/save", async (req, res) => {
 
@@ -61,6 +63,7 @@ app.get("/getlocations", async (req, res) => {
         res.status(200).send({data: locations})
     }catch(error){
         console.error(error);
+        errorOnOtherSide = error;
         console.log("There was an error getting the locations")
     }
 })
@@ -70,7 +73,7 @@ app.get("/", async (req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader('Access-Control-Allow-Methods', '*');
     res.setHeader("Access-Control-Allow-Headers", "*");
-    res.status(200).send({message: "Hello World"});
+    res.status(200).send({message: "Hello World", errorOnOtherSide});
 })
 
 app.use(
