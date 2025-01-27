@@ -54,6 +54,7 @@ app.get("/deleteAll", async (req, res) => {
 
 app.get("/getlocations", async (req, res) => {
 
+    database();
     try{
         console.log("Trying to get the location")
         res.setHeader("Access-Control-Allow-Origin", "*");
@@ -70,6 +71,7 @@ app.get("/getlocations", async (req, res) => {
 
 app.get("/", async (req, res) => {
 
+    database();
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader('Access-Control-Allow-Methods', '*');
     res.setHeader("Access-Control-Allow-Headers", "*");
