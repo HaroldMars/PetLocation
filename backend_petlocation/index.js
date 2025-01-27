@@ -67,7 +67,7 @@ app.use(
     })
   );
 database();
-const server = app.listen(80, ()=> {
+const server = app.listen(8080, ()=> {
     console.log("Backend Server is now running")
 })
 
