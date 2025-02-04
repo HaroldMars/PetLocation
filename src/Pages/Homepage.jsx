@@ -47,10 +47,6 @@ function Homepage() {
               <br />
               <br />
               </div>
-              <button className="bg-white primary-1 px-4 py-1 rounded-full text-[20px]">
-                Locate{" "}
-                <i className="fa-solid fa-arrow-right text-white bg-black p-2 rounded-full"></i>
-              </button>
             </div>
             <div className="md:col-span-4 p-8 h-[300px] md:h-[70%]">
               <div

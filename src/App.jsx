@@ -5,6 +5,8 @@ import SignupPage from "./Pages/SignupPage";
 import LoginPage from "./Pages/LoginPage";
 import PetLocationpage from "./Pages/PetLocationpage";
 import PetLocationRealData from "./Pages/PetLocationRealData";
+import About from "./Pages/about";
+import Help from "./Pages/Help";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route index path="/signup" element={<SignupPage />} />
           <Route index path="/login" element={<LoginPage />} />
           <Route index path="/pet-location" element={<PetLocationRealData />} />
+          <Route index path="/about" element={<About />}/>
+          <Route index path="/help" element={<Help />} />
         </Routes>
       </BrowserRouter>
     </>

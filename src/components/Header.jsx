@@ -27,13 +27,13 @@ function Header() {
           <span className="hidden md:block">Login</span>
         </NavLink>
 
-        <a className="px-4 cursor-pointer truncate">
+        <a className="px-4 cursor-pointer truncate" href="About">
           <div className="md:hidden">
             <i className="fa-solid fa-address-card"></i>
           </div>{" "}
           <span className="hidden md:block">About</span>
         </a>
-        <a className="px-4 cursor-help truncate">
+        <a className="px-4 cursor-help truncate" href="Help">
           <div className="md:hidden">
             <i className="fa-solid fa-question"></i>
           </div>{" "}
