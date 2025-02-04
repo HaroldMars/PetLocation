@@ -5,7 +5,7 @@ import SignupPage from "./Pages/SignupPage";
 import LoginPage from "./Pages/LoginPage";
 import PetLocationpage from "./Pages/PetLocationpage";
 import PetLocationRealData from "./Pages/PetLocationRealData";
-import About from "./Pages/about";
+import About from "./Pages/About";
 import Help from "./Pages/Help";
 
 function App() {
