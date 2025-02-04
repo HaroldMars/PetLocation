@@ -5,15 +5,36 @@ import PetImageIcon from "../assets/dog_icon_marker.png";
 function PetLocationRealData() {
   const [locations, setLocations] = useState([]);
   const [loadedMap, setLoadedMap] = useState(null);
+  const [inputValue, setInputValue] = useState("");
   const callBackend = async () => {
     const backendUrl =
       (import.meta.env.VITE_API_URL ?? "localhost") + "/getlocations";
 
-    const res = await fetch(backendUrl);
+    // const res = await fetch(backendUrl);
 
-    const data = await res.json();
-    setLocations(data.data);
+    // const data = await res.json();
+    // setLocations(data.data);
   };
+
+  const handleEnterLocation = () => {
+    const arr = inputValue.split("&"); // ['pinName=pet_tag_1', 'lat=0.000', 'long=0.000']
+
+    if (arr.length < 3) {
+
+      setLocations([])
+      return;
+    }
+
+    try {
+      const pinName = arr[0].split("=")[1] // pet_tag_1
+      const lat = arr[1].split("=")[1]; // 0.000
+      const long = arr[2].split("=")[1]; // 0.000
+
+      setLocations([{ pinName, lat, long, id: 1 }])
+    } catch {
+      setLocations([])
+    }
+  }
 
   useEffect(() => {
     setInterval(callBackend, 2_000);
@@ -86,11 +107,16 @@ function PetLocationRealData() {
         <div className="relative w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
           <div className="p-8 h-[300px] md:h-[90%]">
             <h1 className="text-center font-bold text-xl">Pet Tracker</h1>
+            <input className="text-black text-center w-[100%] rounded-xl" type="text" onChange={(e) => { setInputValue(e.target.value); handleEnterLocation() }} onInput={(e) => { setInputValue(e.target.value); handleEnterLocation() }} value={inputValue} />
             <div
               className="border-2 relative top-[50%] translate-y-[-50%] rounded-xl"
               id="map"
             ></div>
+
           </div>
+          {
+            locations.length > 0 && <a className="relative border-2  left-[50%] translate-x-[-50%] text-white" target="_blank" href={`https://www.google.com/maps/?q=${locations[0]?.lat},${locations[0]?.long}`}>Open in Map</a>
+          }
         </div>
       </div>
     </>
