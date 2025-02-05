@@ -5,9 +5,9 @@ export default function Help() {
   return (
     <div className='bg-primary-1 w-screen h-screen text-white'>
     <Header />
-    <div className="relative md:grid md:grid-cols-6 w-[50%] h-[80%] bg-primary-2 left-[50%] translate-x-[-50%] rounded-xl">
-        <div className="  w-[370px] h-[100%] bg-primary-2 left-[100px] translate-x-[50px] rounded-sm">
-        <h3 className=" mt-10 font-serif font-bold w-[100%]  ">What Can I Help You With?</h3>
+    <div className="relative w-[50%] bg-primary-2 left-[50%] translate-x-[-50%] rounded-xl">
+        <div className="h-[100%] bg-primary-2  rounded-xl  text-center p-8">
+        <h3 className="  font-serif font-bold w-[100%]  ">What Can I Help You With?</h3>
     <p>If you need assistance or encounter any problems while using the website, please don’t hesitate to contact us at:</p>
     <ul>
         <li><strong>Globe SIM</strong>: +639273865959</li>

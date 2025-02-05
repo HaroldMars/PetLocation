@@ -19,3 +19,71 @@
 }
 
 #map { height: 70%; }
+
+
+
+.card-group {
+  display: flex;
+  gap: 25px;
+}
+.card-group {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.card .layer {
+  background: linear-gradient(to top, rgba(0, 0, 1,), rgba(0, 0, 0,));
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.card .info {
+  position: absolute;
+  bottom: -50%;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.5s bottom, 1.7s opacity;
+}
+.info p {
+  font-size: 14px;
+  margin-top: 3px;
+}
+.info button {
+  background: #490CCC;
+  border: none;
+  padding: 8px, 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.card:hover,
+.card:hover img,
+.card:hover layer {
+  transform:scale(1.1);
+}
+.card:hover > .layer {
+  opacity: 1;
+}
+.card:hover > .info {
+  bottom: 0;
+  opacity: 1;
+}
+.card-group:hover > .card:not(:hover){
+  filter: blur(5px);
+}
+
