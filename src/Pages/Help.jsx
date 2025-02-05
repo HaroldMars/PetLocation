@@ -17,6 +17,9 @@ export default function Help() {
       <tr>
       If you experience a bug or an issue, please report it to us immediately so that we can fix it as soon as possible. This helps us improve the website and ensures a safe experience for both the users and the owners.
       </tr>
+      <ul>
+        <li><strong>Gmail</strong>: abejar199@gmail.com</li>
+    </ul>
     </table>
         </div>
     </div>

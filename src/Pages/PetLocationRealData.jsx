@@ -107,7 +107,7 @@ function PetLocationRealData() {
         <div className="relative w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
           <div className="p-8 h-[300px] md:h-[90%]">
             <h1 className="text-center font-bold text-xl">Pet Tracker</h1>
-            <input className="text-black text-center w-[100%] rounded-xl" type="text" onChange={(e) => { setInputValue(e.target.value); handleEnterLocation() }} onInput={(e) => { setInputValue(e.target.value); handleEnterLocation() }} value={inputValue} />
+            <input className="text-black text-center w-[100%] bg-purple-300 rounded-xl" type="text" onChange={(e) => { setInputValue(e.target.value); handleEnterLocation() }} onInput={(e) => { setInputValue(e.target.value); handleEnterLocation() }} value={inputValue} />
             <div
               className="border-2 relative top-[50%] translate-y-[-50%] rounded-xl"
               id="map"
@@ -115,7 +115,7 @@ function PetLocationRealData() {
 
           </div>
           {
-            locations.length > 0 && <a className="relative border-2  left-[50%] translate-x-[-50%] text-white" target="_blank" href={`https://www.google.com/maps/?q=${locations[0]?.lat},${locations[0]?.long}`}>Open in Map</a>
+            locations.length > 0 && <a className="relative left-[50%] translate-x-[-50%] bg-purple-500 text-white rounded-xl" target="_blank" href={`https://www.google.com/maps/?q=${locations[0]?.lat},${locations[0]?.long}`}>Open in Map</a>
           }
         </div>
       </div>
