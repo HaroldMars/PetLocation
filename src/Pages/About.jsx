@@ -18,15 +18,16 @@ export default function About() {
         <div className="h-[100%] bg-primary-2  rounded-xl  text-center p-8">
             <h1 className= "font-serif font-bold text-3xl"> About </h1> 
 
-            <p>This research is focused on developing a system to monitor the safety of dogs, 
-                particularly in cases where a dog may go missing. The primary objective is to ensure that pet owners can track their dogs and respond promptly if they are lost.
-                However, our prototype currently has limitations due to the accuracy of the signals received by the Arduino system. While the tracking may not yet be fully reliable,
-                we assure all users and pet owners that the safety and well-being of their pets remain our top priority.
-                As this is our first prototype, there are certain constraints, and we acknowledge that improvements are necessary. Nevertheless, we are committed to advancing our research and refining the technology. 
-                In the future, we plan to update the system and address current limitations, ensuring a more accurate and effective solution for pet monitoring. We are confident that with continued development, 
-                we will achieve a more reliable tracking system for pet safety.</p>
+            <p>This research is focused on developing a system to track dogs,
+               particularly in cases where a dog may go missing.
+                The primary objective is to enable pet owners to track their dogs using GPS technology and respond promptly if they are lost. 
+                However, our prototype currently has limitations due to the accuracy of the signals received by the Arduino system.
+                While the GPS tracking may not yet be fully reliable, it is important to note that the system is designed specifically for tracking purposes,
+                not for ensuring the safety of the dogs. As this is our first prototype, there are certain constraints, and we acknowledge that improvements are necessary.
+                Nevertheless, we are committed to advancing our research and refining the technology. In the future, we plan to update the system and address current limitations, 
+                ensuring a more accurate and effective solution for dog tracking. We are confident that with continued development, we will achieve a more reliable GPS tracking system for pet owners.</p>
             
-            
+
             
         </div>
     </div>
