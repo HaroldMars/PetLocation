@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import haroldPicture from "../assets/myphoto.jpg";
-import stephenPicture from "../assets/stephen.jpg";
+import bucaoPicture from "../assets/bucao.jpg";
 import deanPicture from "../assets/dean.jpg";
 import hezekiahPicture from "../assets/hezekiah.jpg";
 import khenPicture from "../assets/khen.jpg";
@@ -34,7 +34,7 @@ export default function About() {
     <div className="card-group mt-5"> 
 
       <div className="card">
-        <img src={stephenPicture} alt="" />
+        <img src={bucaoPicture} alt="" />
         <div className="layer"></div>
         <div className="info">
           <h1>Bucao</h1>
