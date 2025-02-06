@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import iskologoPicture from "../assets/iskologo.png";
 
 export default function Help() {
   return (
@@ -22,7 +23,17 @@ export default function Help() {
     </ul>
     </table>
         </div>
+    <footer className="flex">
+      <div className=" font-serif flex m-auto w-fit font-bold">
+        
+      <p className="w-fit">ST.SCHOLASTICA'S STUDENT'S GRADE-12-ST.ODILIA &copy; </p>
+      <img className="w-[32px] h-[32px] ml-4 " src={iskologoPicture} />
+      </div>
+    </footer>
+    
     </div>
+
+    
    
 </div>
   )

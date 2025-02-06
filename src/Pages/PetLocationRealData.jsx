@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import PetImageIcon from "../assets/dog_icon_marker.png";
+import iskologoPicture from "../assets/iskologo.png";
 
 function PetLocationRealData() {
   const [locations, setLocations] = useState([]);
@@ -118,6 +119,13 @@ function PetLocationRealData() {
             locations.length > 0 && <a className="relative left-[50%] translate-x-[-50%] bg-purple-500 text-white rounded-xl" target="_blank" href={`https://www.google.com/maps/?q=${locations[0]?.lat},${locations[0]?.long}`}>Open in Map</a>
           }
         </div>
+        <footer className="flex">
+              <div className="font-serif font-bold flex m-auto w-fit">
+                
+              <p className="w-fit">GROUP 2 RESEARCHERS  12-ST.ODILIA &copy; </p>
+              <img className="w-[32px] h-[32px] ml-4 " src={iskologoPicture} />
+              </div>
+            </footer>
       </div>
     </>
   );

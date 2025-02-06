@@ -31,6 +31,11 @@ export default function About() {
             
         </div>
     </div>
+    <div className=" mt-2 h-[50%] ">
+      <h1 className="font-serif text-center font-bold text-2xl"> RESEARCHERS</h1>
+
+
+    </div>
 
     <div className="card-group mt-5"> 
 

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header';
+import iskologoPicture from "../assets/iskologo.png";
+
 
 function Homepage() {
 
@@ -22,7 +24,7 @@ function Homepage() {
       
         <div className="bg-primary-1 w-screen h-screen text-white">
           <Header />
-          <div className="relative md:grid md:grid-cols-6 w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
+          <div className=" relative md:grid md:grid-cols-6 w-[80%] h-[80%] bg-secondary-1 left-[50%] translate-x-[-50%] rounded-xl">
             <div className="p-8 md:col-span-2">
               <h1 className="font-bold text-2xl">Locate your Canis</h1>
   
@@ -55,6 +57,13 @@ function Homepage() {
               ></div>
             </div>
           </div>
+          <footer className="flex">
+                  <div className="font-serif text-bold flex m-auto w-fit">
+                    
+                  <p className="w-fit">GROUP 2 RESEARCHERS  12-ST.ODILIA &copy; </p>
+                  <img className="w-[32px] h-[32px] ml-4 " src={iskologoPicture} />
+                  </div>
+                </footer>
         </div>
       </>
     );

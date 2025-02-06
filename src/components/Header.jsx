@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="grid grid-cols-6">
+    <div className=" grid grid-cols-6">
       <div
         className="flex items-center w-fit col-span-3"
         onClick={() => (location.href = "/")}
@@ -53,6 +53,7 @@ function Header() {
             <i className="fa-solid fa-arrow-right"></i>
           </div>
         </NavLink> */}
+        
       </div>
     </div>
   );
