@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import haroldPicture from "../assets/myphoto.jpg";
 import BucaoPicture from "../assets/Bucao.jpg";
-import deanPicture from "../assets/dean.jpg";
-import hezekiahPicture from "../assets/hezekiah.jpg";
-import khenPicture from "../assets/khen.jpg";
+import abatayoPicture from "../assets/abatayo.jpg";
+import hezePicture from "../assets/heze.jpg";
+import floydPicture from "../assets/floyd.jpg";
 import dungayPicture from "../assets/dungay.jpg";
 import larawanPicture from "../assets/larawan.jpg";
 import ezekielPicture from "../assets/ezekiel.jpg";
@@ -60,7 +60,7 @@ export default function About() {
       </div>
 
       <div className="card">
-        <img src={deanPicture} alt="" />
+        <img src={abatayoPicture} alt="" />
         <div className="layer"></div>
         <div className="info">
           <h1>Abatayo</h1>
@@ -70,7 +70,7 @@ export default function About() {
       </div>
 
       <div className="card">
-        <img src={hezekiahPicture} alt="" />
+        <img src={hezePicture} alt="" />
         <div className="layer"></div>
         <div className="info">
           <h1>Rabadon</h1>
@@ -80,7 +80,7 @@ export default function About() {
       </div>
 
       <div className="card">
-        <img src={khenPicture} alt="" />
+        <img src={floydPicture} alt="" />
         <div className="layer"></div>
         <div className="info">
           <h1>Pelicano</h1>
