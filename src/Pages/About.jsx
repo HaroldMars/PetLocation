@@ -64,7 +64,7 @@ export default function About() {
         <div className="layer"></div>
         <div className="info">
           <h1>Abatayo</h1>
-          <p>ManuScript incoder, Research Analyst</p>
+          <p>ManuScript Encoder, Research Analyst</p>
           <button>MEMBER</button>
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function About() {
         <div className="layer"></div>
         <div className="info">
           <h1>Rabadon</h1>
-          <p>Assistant Group Leader, Manuscript Incoder, Research Analyst</p>
+          <p>Assistant Group Leader, Manuscript Encoder, Research Analyst</p>
           <button>MEMBER</button>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function About() {
         <div className="layer"></div>
         <div className="info">
           <h1>Pelicano</h1>
-          <p>ManuScript Incoder, Research Analyst, Website Design</p>
+          <p>ManuScript Encoder, Research Analyst, Website Design</p>
           <button>MEMBER</button>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function About() {
         <div className="layer"></div>
         <div className="info">
           <h1>Dugay</h1>
-          <p>Research Analyst, Manuscript Incoder</p>
+          <p>Research Analyst, Manuscript Encoder</p>
           <button>MEMBER</button>
         </div>
       </div>
@@ -104,7 +104,7 @@ export default function About() {
         <div className="layer"></div>
         <div className="info">
           <h1>Larawan</h1>
-          <p>ManuScript Incoder, Research Analyst</p>
+          <p>ManuScript Encoder, Research Analyst</p>
           <button>MEMBER</button>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function About() {
         <div className="layer"></div>
         <div className="info">
           <h1>Sacanay</h1>
-          <p>Research Analyst, Website Design, ManuScirpt Incoder</p>
+          <p>Research Analyst, Website Design, ManuScirpt Encoder</p>
           <button>MEMBER</button>
         </div>
       </div>
