@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import haroldPicture from "../assets/myphoto.jpg";
+import JayPicture from "../assets/Jay.jpg";
 import BucaoPicture from "../assets/Bucao.jpg";
 import abatayoPicture from "../assets/abatayo.jpg";
 import hezePicture from "../assets/heze.jpg";
 import floydPicture from "../assets/floyd.jpg";
-import dungayPicture from "../assets/dungay.jpg";
+import vincentPicture from "../assets/vincent.jpg";
 import larawanPicture from "../assets/larawan.jpg";
 import ezekielPicture from "../assets/ezekiel.jpg";
 import iskologoPicture from "../assets/iskologo.png";
@@ -40,26 +40,6 @@ export default function About() {
     <div className="card-group mt-5"> 
 
       <div className="card">
-        <img src={BucaoPicture} alt="" />
-        <div className="layer"></div>
-        <div className="info">
-          <h1>Bucao</h1>
-          <p>Group Leader of Group 2</p>
-          <button>LEADER</button>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src={haroldPicture} alt="" />
-        <div className="layer"></div>
-        <div className="info">
-          <h1>Abejar</h1>
-          <p>Developer, Front-End Developer, Website Design, </p>
-          <button>MEMBER</button>
-        </div>
-      </div>
-
-      <div className="card">
         <img src={abatayoPicture} alt="" />
         <div className="layer"></div>
         <div className="info">
@@ -70,11 +50,41 @@ export default function About() {
       </div>
 
       <div className="card">
-        <img src={hezePicture} alt="" />
+        <img src={JayPicture} alt="" />
         <div className="layer"></div>
         <div className="info">
-          <h1>Rabadon</h1>
-          <p>Assistant Group Leader, Manuscript Encoder, Research Analyst</p>
+          <h1>Abejar</h1>
+          <p>Developer, Front-End Developer, Website Design, </p>
+          <button>MEMBER</button>
+        </div>
+      </div>
+
+      <div className="card">
+        <img src={BucaoPicture} alt="" />
+        <div className="layer"></div>
+        <div className="info">
+          <h1>Bucao</h1>
+          <p>Group Leader of Group 2</p>
+          <button>LEADER</button>
+        </div>
+      </div>
+
+      <div className="card">
+        <img src={vincentPicture} alt="" />
+        <div className="layer"></div>
+        <div className="info">
+          <h1>Dungay</h1>
+          <p>Research Analyst, Manuscript Encoder</p>
+          <button>MEMBER</button>
+        </div>
+      </div>
+
+      <div className="card">
+        <img src={larawanPicture} alt="" />
+        <div className="layer"></div>
+        <div className="info">
+          <h1>Larawan</h1>
+          <p>ManuScript Encoder, Research Analyst</p>
           <button>MEMBER</button>
         </div>
       </div>
@@ -90,21 +100,11 @@ export default function About() {
       </div>
 
       <div className="card">
-        <img src={dungayPicture} alt="" />
+        <img src={hezePicture} alt="" />
         <div className="layer"></div>
         <div className="info">
-          <h1>Dugay</h1>
-          <p>Research Analyst, Manuscript Encoder</p>
-          <button>MEMBER</button>
-        </div>
-      </div>
-
-      <div className="card">
-        <img src={larawanPicture} alt="" />
-        <div className="layer"></div>
-        <div className="info">
-          <h1>Larawan</h1>
-          <p>ManuScript Encoder, Research Analyst</p>
+          <h1>Rabadon</h1>
+          <p>Assistant Group Leader, Manuscript Encoder, Research Analyst</p>
           <button>MEMBER</button>
         </div>
       </div>
